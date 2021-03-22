@@ -41,16 +41,22 @@
   }
 }
 html, body #root {
-  background-image: url("https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?cs=srgb&dl=pexels-johannes-plenio-1118873.jpg&fm=jpg");
-  background-size: cover;
-  background-position: contain;
+ 
+  
+  /* background-position: contain; */
   height: 100%;
+  /* background-size: auto; */
   
 }
 
 
 body {
-  height: 100%;
+  background-image: url("https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?cs=srgb&dl=pexels-johannes-plenio-1118873.jpg&fm=jpg");
+  height: auto;
+  max-width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }
 
 .box {
