@@ -1,12 +1,12 @@
   
-import React from 'react';
-import CitySelector from './components/CitySelector';
-import './App.css';
-import {Container} from 'react-bootstrap';
-import UseFetch from './hooks/UseFetch';
-import {API_KEY, API_BASE_URL} from './apis/config'
-import DailyCard from './components/DailyCard';
-import Footer from './components/Footer'
+import React from "react";
+import CitySelector from "./components/CitySelector";
+import "./App.css";
+import {Container} from "react-bootstrap";
+import UseFetch from "./hooks/UseFetch";
+import {API_KEY, API_BASE_URL} from "./apis/config"
+import DailyCard from "./components/DailyCard";
+import Footer from "./components/Footer"
 
 
 
