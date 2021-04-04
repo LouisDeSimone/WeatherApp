@@ -1,5 +1,6 @@
 import React from 'react';
 import {Card} from 'react-bootstrap';
+// import CitySelector from "CitySelector";
 
 function importAll(r) {
 	let images = {};
@@ -33,10 +34,10 @@ const DailyCard = (props) => {
         <h1>{Math.round(props.temp)}&#176;F</h1>
          <h3 className="capitalize">{props.description}</h3>
          {/* maximum temperature */}
-        <h2>Max: {Math.round(props.temp_max)}</h2>
+        <h2 className="maxMin">Max: {Math.round(props.temp_max)}&#176;F     |   Min: {Math.round(props.temp_min)}&#176;F</h2>
         {/* minimum temperature */}
-        <h2>Min: {Math.round(props.temp_min)}</h2>
-        
+        {/* <h2>Min: {Math.round(props.temp_min)}</h2> */}
+        {/* <p>lat: {props.lat} long: {props.long}</p> */}
       </Card.Body>
     </Card>
     </div>

@@ -5,7 +5,7 @@ import {Row, Col, FormControl, Button} from 'react-bootstrap';
 
 const CitySelector = ({onSearch}) => {
     const [city, setCity] = useState('');
-    const [zip, setZip] = useState('');
+    // const [zip, setZip] = useState('');
     const [state, setState] = useState('');
     const [country, setCountry] = useState('');
 
@@ -21,7 +21,7 @@ const CitySelector = ({onSearch}) => {
           <Col lg={4} sm={6} xs={8}>
             <FormControl
             className = "form"
-            type="search submit" 
+            type="search" 
               placeholder="Enter City"
               onChange={(event) => setCity(event.target.value)}
               value={city}
@@ -31,25 +31,25 @@ const CitySelector = ({onSearch}) => {
             <Col lg={4} sm={6} xs={8}>
              <FormControl
             className = "form"
-            type="search submit" 
+            type="search" 
               placeholder="Enter State"
               onChange={(event) => setState(event.target.value)}
               value={state}
             />
             <hr className="gap"></hr>
-            {/* <h1 className="or">or</h1>
+             {/* <h1 className="or">or</h1>
             <FormControl
             className = "form"
-            type="search submit"
+            type="search"
               placeholder="Enter Zip Code"
               onChange={(event) => setZip(event.target.value)}
               value={zip}
-            /> */}
+            />  */}
             </Col>
             <Col lg={4} sm={6} xs={8}>
              <FormControl
             className = "form"
-            type="search submit" 
+            type="search" 
               placeholder="Enter Country"
               onChange={(event) => setCountry(event.target.value)}
               value={country}
@@ -60,7 +60,7 @@ const CitySelector = ({onSearch}) => {
   
         <Row>
           <Col>
-            <Button onClick={() => onSearch(city, zip)}>Check Weather</Button>
+            <Button onClick={() => onSearch(city,state,country)}>Check Weather</Button>
           </Col>
         </Row>
         

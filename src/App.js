@@ -22,6 +22,8 @@ const App = () => {
       name={data.name}
       country={data.sys.country}
       temp={data.main.temp} 
+      //lat={data.coord.lat}
+      //long={data.coord.lon}
                 description={data.weather[0].description} 
                 temp_max={data.main.temp_max} 
                 temp_min={data.main.temp_min} 
@@ -34,7 +36,9 @@ const App = () => {
     <div className="mainPage">
     <Container className="App">
    
-      <CitySelector onSearch={(city, zip, state, country) => setUrl(`${API_BASE_URL}/data/2.5/weather?q=${city},${state},${country}&zip=${zip}&appid=${API_KEY}&units=imperial`)} />
+      <CitySelector onSearch={(city,state,country) => setUrl(`${API_BASE_URL}/data/2.5/weather?q=${city.trim()},${state.trim()},${country.trim()}&appid=${API_KEY}&units=imperial`)} />
+      
+
       {/* <CitySelector onSearch={(city) => setUrl(`${API_BASE_URL}/data/2.5/forecast?q=${city}&cnt=5&appid=${API_KEY}`)} /> */}
       {/* conditionally render  */}
       {getContent()}

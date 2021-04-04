@@ -41,22 +41,17 @@
   }
 }
 html, body #root {
- 
-  
-  /* background-position: contain; */
   height: 100%;
   /* background-size: auto; */
-  
 }
 
 
 body {
   background-image: url("https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?cs=srgb&dl=pexels-johannes-plenio-1118873.jpg&fm=jpg");
   height: auto;
-  max-width: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-
+  width: 100%;
+    /* background-position: contain; */
+  background-size: 100% 150%;
 }
 
 .box {
@@ -102,7 +97,7 @@ h3.capitalize {
 .card-body {
   color: #7868e6;
   
-  height: 400px;
+  height: 300px;
 }
 
 .card-body h1 {
@@ -110,8 +105,12 @@ h3.capitalize {
   
 }
 
-.card-body h2 {
+h2 {
   font-size: 2rem;
+}
+
+.maxMin {
+  font-size: 1.5rem;
 }
 
 hr {
